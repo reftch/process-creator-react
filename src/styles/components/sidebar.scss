@@ -1,0 +1,53 @@
+@use '../colors';
+
+.sidebar {
+  margin-top: 0px;
+  width: 100%;  
+  background-color: var(--background);
+  height: calc(100vh - 110px);
+
+  a {
+    display: block;
+    padding: 15px;
+    // padding: 15px 10px 15px 5px;
+    // border-bottom: 1px solid var(--border-bottom);
+    color: var(--primary);
+    // white-space: nowrap;
+    // border-right: 3px solid inherit;
+    border-left: 4px solid var(--background-sidebar);
+    background-color: var(--background-sidebar);
+    // border-left: 3px solid inherit;
+    border-bottom: 1px solid var(--border-bottom);
+  }
+
+  &-icon {
+    padding: 5px;
+  }
+
+  &-title {
+    padding-left: 10px;
+  }
+
+  a:hover {
+    // background-color: var(--hover);
+    border-left: 4px solid var(--separator-color);
+    background-color: var(--background-sidebar-active);
+    // @include regular-shadow;
+  }
+
+  &-active {
+    background: var(--background-selected);
+    border-left: 4px solid var(--separator-color) !important;
+    // border-left: 4px solid var(--selected) !important;
+    // @include regular-shadow;
+  }
+
+}
+
+.side-nav {
+  // @include regular-shadow;
+  li {
+    cursor: pointer;
+    color: #e6ebf1;
+  }
+}

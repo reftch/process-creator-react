@@ -1,0 +1,45 @@
+@use '../colors';
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+
+  &-text {
+    padding: 7px 20px 7px 20px;
+    white-space: nowrap;
+    @include small-shadow;
+  }
+
+  &-primary {
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 20px;
+    color: var(--primary);
+    border: 1px solid var(--background-button-primary);
+    background-color: var(--background-button-primary);
+    
+    &:hover {
+      background-color: var(--background-button-hover);
+      @include regular-shadow;
+    }
+    
+    &-disabled {
+      cursor: default;
+      background-color: var(--background-disabled) !important;
+    }
+  }
+
+  &-secondary {
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid var(--background-button-primary);
+
+    &:hover {
+      background-color: var(--hover);
+      border: 1px solid var(--background-button-hover);
+      @include regular-shadow;
+    }
+  }
+
+}
