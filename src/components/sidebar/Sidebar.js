@@ -13,7 +13,7 @@ const Sidebar = ({links}) => {
     <div className="side-nav">
       <div className="logo">
         <span className="icon-logo" />
-        <span className="title">Prototype</span>
+        <span className="title">React</span>
       </div>
 
       <div className="sidebar">

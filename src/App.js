@@ -16,7 +16,7 @@ import {
 const App = () => {
   
   const links = [
-    { title: 'Workspaces', path: '/workspaces', icon: 'bi bi-box-seam', main: Workspaces },
+    { title: 'Workspaces', path: '/workspaces', icon: 'bi-box-seam', main: Workspaces },
     { title: 'Settings', path: '/settings', icon: 'bi bi-gear-fill', main: Settings },
     { title: 'System Info', path: '/info', icon: 'bi bi-info-circle', main: Info },
     { title: 'About', path: '/about', icon: 'bi bi-question-circle', main: About },
@@ -35,7 +35,7 @@ const App = () => {
               <Route
                 key={index}
                 path={route.path}
-                children={<route.main />}
+                children={<route.main/>}
               />
             ))} 
             <Route path="/">
