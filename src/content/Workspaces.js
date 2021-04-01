@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Button from '../components/button/Button'
 import Table from '../components/table/Table'
+import InputField from '../components/input-field/InputField'
 
 export const Workspaces = () => {
   const [selectAll, setSelectAll] = useState(false);
@@ -63,7 +64,7 @@ export const Workspaces = () => {
                 primary="true"
                 disabled={deleteDisabled}
               />
-              {/* <p-input-field placeholder="Search" /> */}
+              <InputField placeholder="Search" />
             </div>
           </div>
           <div className="form-row">

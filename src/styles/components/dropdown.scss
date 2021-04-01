@@ -1,5 +1,6 @@
 @use '../colors';
 
+
 .dropdown {
   position: relative;
   user-select: none;
@@ -38,17 +39,18 @@
     @include small-shadow;
   }
 
-  &-arrow::after {
-    font-family: "Icons";
-    content: "\E919";
-    display: inline-block;
+  &-arrow {
+    background-image: url(../icons/caret-down-fill.svg);
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
     position: relative;
     top: 1px;
     pointer-events: none;
     transition: 0.2s;
   }
 
-  .open &-arrow::after {
+  .open &-arrow {
     -ms-transform: rotate(180deg); /* IE 9 */
     -webkit-transform: rotate(180deg); /* Safari */
     transform: rotate(180deg);

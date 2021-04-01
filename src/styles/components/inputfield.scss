@@ -1,6 +1,6 @@
 @use '../colors';
 
-.inputfield {
+.input-field {
   position: relative;
   user-select: none;
   // @include small-shadow;
@@ -31,7 +31,7 @@
 
   &-form-row > input,
   &-form-row > button {
-    padding: 0.4em;
+    padding: 0.5em;
   }
 
   &-form-row > input:hover {
