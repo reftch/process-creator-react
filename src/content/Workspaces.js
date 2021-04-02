@@ -4,11 +4,12 @@ import Table from '../components/table/Table'
 import InputField from '../components/input-field/InputField'
 
 export const Workspaces = () => {
+  const [search] = useState('');
   const [selectAll, setSelectAll] = useState(false);
   const [deleteDisabled, setDeleteDisabled] = useState(true);
   const [workspaces, setWorkspaces] = useState([
-    { name: 'Custom', type: '', projects: '3', path: '/root', selected: false },
-    { name: 'Commands', type: '', projects: '2', path: '/root/commands', selected: false },
+    { id: 1, name: 'Custom', type: '', projects: '3', path: '/root', selected: false },
+    { id: 2, name: 'Commands', type: '', projects: '2', path: '/root/commands', selected: false },
   ]);
 
   const columns = [
@@ -48,7 +49,7 @@ export const Workspaces = () => {
         <span className="form-description-icon wui-icon-help" />
           These are Process Creator's workspaces settings for the projects location behavior.
           These settings are unrelated to the process's definitions, parameters and
-          behavior. <a href="#/">Learn more.</a>
+          behavior. <a href="https://reactjs.org/"  target="_blank">Learn more.</a>
       </div>
 
       <div className="widget">
@@ -64,7 +65,7 @@ export const Workspaces = () => {
                 primary="true"
                 disabled={deleteDisabled}
               />
-              <InputField placeholder="Search" />
+              <InputField placeholder="Search" value={search}/>
             </div>
           </div>
           <div className="form-row">

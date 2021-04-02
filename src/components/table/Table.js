@@ -18,7 +18,7 @@ const Table = ({ items, columns, selectAll, select }) => {
   );
  
   const rows = items.map((item) => 
-    <div key={item.name} className="table-row" onClick={() => select(item)}>
+    <div key={item.id} className="table-row" onClick={() => select(item)}>
       <div className="table-cell">
         <Checkbox value={item.selected}></Checkbox>
       </div>

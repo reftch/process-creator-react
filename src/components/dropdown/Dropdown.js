@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 const Dropdown = (props) => {
-  const [value] = useState(props.value || '');
+  const value = props.value || '';
   const [isActive, setActive] = useState(false);
 
   const handleToggle = () => {
@@ -9,7 +9,7 @@ const Dropdown = (props) => {
   };
 
   const options = props.options.map((option) => 
-    <span key={option.id} className="dropdown-option">
+    <span key={option.id} className="dropdown-option" onClick={() => props.handleInputValue(option.value)}>
       {option.value}
     </span>
   );

@@ -6,9 +6,7 @@ const Info = () => {
       <div className="title">System Info</div>
       <div className="form-description">
         <span className="form-description-icon wui-icon-help" />
-          These are Process Creator's workspaces settings for the projects location behavior.
-          These settings are unrelated to the process's definitions, parameters and
-          behavior. <a href="#/">Learn more.</a>
+         System data, environment variables and etc.
       </div>
     </div>  
   )
