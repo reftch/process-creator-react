@@ -3,17 +3,17 @@ import Button from '../../components/button/Button'
 import Dropdown from '../../components/dropdown/Dropdown'
 
 const Desktop = () => {
-  const [theme, setTheme] = useState('Light Theme');
+  const [theme, setTheme] = useState('Light');
   const themes = [
-    { id: 1, value: 'Light Theme' },
-    { id: 2, value: 'Dark Theme' },
+    { id: 1, value: 'Light' },
+    { id: 2, value: 'Dark' },
   ];
 
   const [lang, setLanguage] = useState('English');
   const languages = [
-    { id: 1, value: 'English' },
-    { id: 2, value: 'German' },
-    { id: 3, value: 'French' },
+    { id: 1, value: 'Deutsch' },
+    { id: 2, value: 'English' },
+    { id: 3, value: 'Français' },
   ];
 
   const setNewTheme = (theme) => {

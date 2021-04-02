@@ -4,19 +4,17 @@ const Dropdown = (props) => {
   const value = props.value || '';
   const [isActive, setActive] = useState(false);
 
-  const handleToggle = () => {
-    setActive(!isActive);
-  };
-
-  const options = props.options.map((option) => 
-    <span key={option.id} className="dropdown-option" onClick={() => props.handleInputValue(option.value)}>
+  const options = props.options.map((option) =>
+    <span key={option.id} 
+      className={"dropdown-option" + (option.value === props.value ? " selected" : "")}
+      onClick={() => props.handleInputValue(option.value)}>
       {option.value}
     </span>
   );
 
   return (
-    <div className={props.disabled ? "dropdown dropdown-disabled" : "dropdown"} onClick={handleToggle}>
-      <div className={isActive ? "dropdown-select open" : "dropdown-select"}>
+    <div className={props.disabled ? "dropdown dropdown-disabled" : "dropdown"} onClick={() => setActive(!isActive)}>
+      <div className={"dropdown-select" + (isActive ? " open" : "")}>
         <div className="dropdown-select-trigger">
           <span>{value}</span>
           <div className="dropdown-arrow open"></div>

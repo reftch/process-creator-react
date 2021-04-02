@@ -17,9 +17,9 @@ const App = () => {
   
   const links = [
     { title: 'Workspaces', path: '/workspaces', icon: 'bi-box-seam', main: Workspaces },
-    { title: 'Settings', path: '/settings', icon: 'bi bi-gear-fill', main: Settings },
-    { title: 'System Info', path: '/info', icon: 'bi bi-info-circle', main: Info },
-    { title: 'About', path: '/about', icon: 'bi bi-question-circle', main: About },
+    { title: 'Settings', path: '/settings', icon: 'bi-gear-fill', main: Settings },
+    { title: 'System Info', path: '/info', icon: 'bi-info-circle', main: Info },
+    { title: 'About', path: '/about', icon: 'bi-question-circle', main: About },
   ];
 
   return (
