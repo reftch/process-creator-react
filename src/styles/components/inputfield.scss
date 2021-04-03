@@ -35,7 +35,7 @@
   }
 
   &-form-row > input:hover {
-    @include regular-shadow;
+    @include small-shadow;
   }
 
   &-disabled &-form-row > input {
@@ -44,11 +44,15 @@
   }
 
   &-required &-form-row > input {
-    // border: 1px solid var(--red);
     color: var(--hint);
+  }
+
+  input:focus {
+    outline-color: var(--selected);
   }
 
   &-disabled &-form-row > input:hover {
     @include none-shadow;
   }
+
 }

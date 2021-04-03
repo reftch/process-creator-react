@@ -2,11 +2,13 @@ import { NavLink } from "react-router-dom";
 
 const Sidebar = ({links}) => {
 
-  const navigation = links.map((link) =>
-    <NavLink key={link.title} to={link.path} activeClassName="sidebar-active" strict>
-      <span className={link.icon}></span>
-      <span className="sidebar-title">{link.title}</span>
-    </NavLink>
+  const navigation = links
+    .filter(link => link.visible)
+    .map((link) =>
+      <NavLink key={link.title} to={link.path} activeClassName="sidebar-active" strict>
+        <span className={link.icon}></span>
+        <span className="sidebar-title">{link.title}</span>
+      </NavLink>
   );
 
   return (

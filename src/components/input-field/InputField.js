@@ -13,6 +13,7 @@ const InputField = (props) => {
           disabled={disabled}
           placeholder={placeholder}
           defaultValue={value}
+          onChange={props.onChange}
         />
       </div>
     </div >

@@ -13,9 +13,11 @@ const Dropdown = (props) => {
   );
 
   return (
-    <div className={props.disabled ? "dropdown dropdown-disabled" : "dropdown"} onClick={() => setActive(!isActive)}>
+    <div className={props.disabled ? "dropdown dropdown-disabled" : "dropdown"} 
+      onClick={() => setActive(!isActive)} 
+      tabIndex="0" onBlur={() => setActive(false)}>
       <div className={"dropdown-select" + (isActive ? " open" : "")}>
-        <div className="dropdown-select-trigger">
+        <div className="dropdown-select-trigger" >
           <span>{value}</span>
           <div className="dropdown-arrow open"></div>
         </div>

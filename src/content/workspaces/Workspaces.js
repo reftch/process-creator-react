@@ -1,15 +1,17 @@
 import { useState, useEffect } from 'react'
-import Button from '../components/button/Button'
-import Table from '../components/table/Table'
-import InputField from '../components/input-field/InputField'
+import { useHistory } from "react-router-dom";
+import Button from '../../components/button/Button'
+import Table from '../../components/table/Table'
+import InputField from '../../components/input-field/InputField'
 
 export const Workspaces = () => {
+  const history = useHistory();
   const [search] = useState('');
   const [selectAll, setSelectAll] = useState(false);
   const [deleteDisabled, setDeleteDisabled] = useState(true);
   const [workspaces, setWorkspaces] = useState([
-    { id: 1, name: 'Custom', type: '', projects: '3', path: '/root', selected: false },
-    { id: 2, name: 'Commands', type: '', projects: '2', path: '/root/commands', selected: false },
+    { id: 1, name: 'Custom', type: 'LOCAL', projects: '3', path: '/root', selected: false },
+    { id: 2, name: 'Commands', type: 'LOCAL', projects: '2', path: '/root/commands', selected: false },
   ]);
 
   const columns = [
@@ -57,7 +59,7 @@ export const Workspaces = () => {
         <div className="chart">
           <div className="form-row">
             <div className="form-row-left">
-              <Button title="Add Workspace" primary="true" />
+              <Button title="Add Workspace" primary="true" handleClick={() => history.push('/workspaces/edit')}/>
             </div>
             <div className="form-row-right">
               <Button

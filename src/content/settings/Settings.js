@@ -1,7 +1,7 @@
 import React from 'react'
-import Desktop from './settings/Desktop'
-import Applications from './settings/Applications'
-import Containers from './settings/Containers'
+import Desktop from './Desktop'
+import Applications from './Applications'
+import Containers from './Containers'
 
 const Settings = () => {
 
