@@ -1,3 +1,4 @@
+import React from 'react'
 import InputField from '../../components/input-field/InputField'
 import Dropdown from '../../components/dropdown/Dropdown'
 

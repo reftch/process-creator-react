@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Checkbox from '../checkbox/Checkbox';
 
 const Table = ({ items, columns, selectAll, select }) => {

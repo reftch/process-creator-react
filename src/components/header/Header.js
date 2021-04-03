@@ -1,4 +1,4 @@
-// import { useState } from 'react'
+import React from 'react'
 // import Button from "../button/Button"
 
 const Header = () => {
@@ -30,38 +30,5 @@ const Header = () => {
     </div>
   )
 
-  // const [count, setCount] = useState(0);
-  // const posts = [
-  //   {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
-  //   {id: 2, title: 'Installation', content: 'You can install React from npm.'},
-  // ];
-
-  // const inc = () => {
-  //   setCount(count + 1)
-  // }
-
-  // const dec = () => {
-  //   setCount(count - 1)
-  // }
-
-  // const content = posts.map((post) =>
-  //   <div key={post.id}>
-  //     <div>{post.id}. {post.title}</div>
-  //     <p>{post.content}</p>
-  //   </div>
-  // );
-
-  // return (
-  //   <header>
-  //     <h1>Hello From React</h1>
-
-  //     <Button title="Increment" primary="true" handleClick={inc}></Button>
-  //     <Button title="Decrement" secondary="true" handleClick={dec}></Button>
-      
-  //     { count >= 0 && <div>Count: {count}</div> }
-
-  //     {content}
-  //   </header>
-  // )
 }
 export default Header

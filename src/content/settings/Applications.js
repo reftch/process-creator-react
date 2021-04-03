@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import Button from '../../components/button/Button'
 import InputField from '../../components/input-field/InputField'
 import Table from '../../components/table/Table'
