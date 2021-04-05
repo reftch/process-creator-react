@@ -7,7 +7,7 @@ const Sidebar = ({links}) => {
     .filter(link => link.visible)
     .map((link) =>
       <NavLink key={link.title} to={link.path} activeClassName="sidebar-active" strict>
-        <span className={link.icon}></span>
+        <span className={'sidebar-icon ' + link.icon}></span>
         <span className="sidebar-title">{link.title}</span>
       </NavLink>
   );

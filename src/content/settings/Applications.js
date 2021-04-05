@@ -43,9 +43,9 @@ const Applications = () => {
 
   return (
     <div className="widget">
-      <div className="title">Static Applications</div>
+      <div className="widget-title">Static Applications</div>
 
-      <div className="chart">
+      <div className="widget-chart">
           <div className="form-row">
             <div className="form-row-left">
               <Button title="Deploy" primary="true" />

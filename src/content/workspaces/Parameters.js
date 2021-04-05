@@ -12,9 +12,9 @@ const Parameters = (props) => {
 
   return (
     <div className="widget">
-      <div className="title">Parameters</div>
+      <div className="widget-title">Parameters</div>
          
-      <div className="chart form-inline">
+      <div className="widget-chart form-inline">
         <div className="row-col-50">
           <label className="form-label">Workspace Name *</label>
           <div className="form-hint">

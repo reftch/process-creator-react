@@ -42,9 +42,9 @@ const Containers = () => {
 
   return (
     <div className="widget">
-      <div className="title">Container Registries</div>
+      <div className="widget-title">Container Registries</div>
 
-      <div className="chart">
+      <div className="widget-chart">
           <div className="form-row">
             <div className="form-row-left">
               <Button title="Add Registry" primary="true" />

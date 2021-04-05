@@ -26,8 +26,8 @@ const Desktop = () => {
 
   return (
     <div className="widget">
-      <div className="title">Desktop</div>
-      <div className="chart form-inline">
+      <div className="widget-title">Desktop</div>
+      <div className="widget-chart form-inline">
         <div className="row-col-40">
           <label className="form-label">Appearance</label>
           <div className="form-hint">Current application color's theme.</div>

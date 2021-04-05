@@ -33,9 +33,9 @@ const Pod = () => {
 
   return (
     <div className="widget">
-      <div className="title">Pod</div>
+      <div className="widget-title">Pod</div>
 
-      <div className="chart form-inline">
+      <div className="widget-chart form-inline">
 
         <div className="row-col-25">
           <label className="form-label">Database *</label>

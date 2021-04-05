@@ -55,8 +55,8 @@ export const Workspaces = () => {
       </div>
 
       <div className="widget">
-        <div className="title">Workspaces</div>
-        <div className="chart">
+        <div className="widget-title">Workspaces</div>
+        <div className="widget-chart">
           <div className="form-row">
             <div className="form-row-left">
               <Button title="Add Workspace" primary="true" handleClick={() => history.push('/workspaces/edit')}/>
